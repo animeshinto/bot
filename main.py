@@ -1,11 +1,11 @@
 from flask import Flask, Response
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 from datetime import datetime
 import time
-import os
 
 app = Flask(__name__)
 LOG_PATH = "registro.log"
@@ -22,7 +22,9 @@ def registrar_rut_virtual(url, tipo):
     options.add_argument("--disable-gpu")
     options.add_argument("--window-size=1920,1080")
 
-    driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
+    service = Service(ChromeDriverManager().install())
+    driver = webdriver.Chrome(service=service, options=options)
+
     try:
         driver.get(url)
         time.sleep(3)
