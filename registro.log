@@ -1,0 +1,517 @@
+⚠️ Error a las 2025-09-02 20:55:08: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(text(), 'ENTRADA')]"}
+  (Session info: chrome=138.0.7204.100); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x55abbf71154e base::debug::StackTrace::StackTrace()
+#1 0x55abbf199736 Status::Status()
+#2 0x55abbf1e9246 FindElementCommon()
+#3 0x55abbf1e95f1 FindElement()
+#4 0x55abbf2356e4 ExecuteFindElement()
+#5 0x55abbf21065d base::internal::Invoker<>::Run()
+#6 0x55abbf233266 ExecuteWindowCommand()
+#7 0x55abbf2103b3 base::internal::Invoker<>::Run()
+#8 0x55abbf1dbb31 _ZN12_GLOBAL__N_136ExecuteSessionCommandOnSessionThreadEPKcRKNSt4__Cr12basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEERKN4base17RepeatingCallbackIF6StatusP7SessionRKNSB_9DictValueEPNS2_10unique_ptrINSB_5ValueENS2_14default_deleteISK_EEEEEEEbbSI_13scoped_refptrINSB_22SingleThreadTaskRunnerEERKNSC_IFvRKSD_SN_SA_bEEE.c2d79fcaf9d3f4de329075124162d84e
+#9 0x55abbf1dc841 base::internal::Invoker<>::RunOnce()
+#10 0x55abbf6df241 base::TaskAnnotator::RunTaskImpl()
+#11 0x55abbf6e2781 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWorkImpl()
+#12 0x55abbf6e21d8 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWork()
+#13 0x55abbf6e2c25 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWork()
+#14 0x55abbf6cb4db base::MessagePumpDefault::Run()
+#15 0x55abbf6e2ff9 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::Run()
+#16 0x55abbf6b4bf5 base::RunLoop::Run()
+#17 0x55abbf6ff858 base::Thread::Run()
+#18 0x55abbf6ffa7d base::Thread::ThreadMain()
+#19 0x55abbf7108ec _ZN4base12_GLOBAL__N_110ThreadFuncEPv.a67435033112019129ad5c28ddc47327
+#20 0x7f7a2de68ea3 start_thread
+
+⚠️ Error a las 2025-09-02 20:56:05: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(text(), 'ENTRADA')]"}
+  (Session info: chrome=138.0.7204.100); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x563d96c5854e base::debug::StackTrace::StackTrace()
+#1 0x563d966e0736 Status::Status()
+#2 0x563d96730246 FindElementCommon()
+#3 0x563d967305f1 FindElement()
+#4 0x563d9677c6e4 ExecuteFindElement()
+#5 0x563d9675765d base::internal::Invoker<>::Run()
+#6 0x563d9677a266 ExecuteWindowCommand()
+#7 0x563d967573b3 base::internal::Invoker<>::Run()
+#8 0x563d96722b31 _ZN12_GLOBAL__N_136ExecuteSessionCommandOnSessionThreadEPKcRKNSt4__Cr12basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEERKN4base17RepeatingCallbackIF6StatusP7SessionRKNSB_9DictValueEPNS2_10unique_ptrINSB_5ValueENS2_14default_deleteISK_EEEEEEEbbSI_13scoped_refptrINSB_22SingleThreadTaskRunnerEERKNSC_IFvRKSD_SN_SA_bEEE.c2d79fcaf9d3f4de329075124162d84e
+#9 0x563d96723841 base::internal::Invoker<>::RunOnce()
+#10 0x563d96c26241 base::TaskAnnotator::RunTaskImpl()
+#11 0x563d96c29781 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWorkImpl()
+#12 0x563d96c291d8 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWork()
+#13 0x563d96c29c25 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWork()
+#14 0x563d96c124db base::MessagePumpDefault::Run()
+#15 0x563d96c29ff9 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::Run()
+#16 0x563d96bfbbf5 base::RunLoop::Run()
+#17 0x563d96c46858 base::Thread::Run()
+#18 0x563d96c46a7d base::Thread::ThreadMain()
+#19 0x563d96c578ec _ZN4base12_GLOBAL__N_110ThreadFuncEPv.a67435033112019129ad5c28ddc47327
+#20 0x7f66a7582ea3 start_thread
+
+⚠️ Error a las 2025-09-02 20:56:10: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(text(), 'ENTRADA')]"}
+  (Session info: chrome=138.0.7204.100); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x5558c20a254e base::debug::StackTrace::StackTrace()
+#1 0x5558c1b2a736 Status::Status()
+#2 0x5558c1b7a246 FindElementCommon()
+#3 0x5558c1b7a5f1 FindElement()
+#4 0x5558c1bc66e4 ExecuteFindElement()
+#5 0x5558c1ba165d base::internal::Invoker<>::Run()
+#6 0x5558c1bc4266 ExecuteWindowCommand()
+#7 0x5558c1ba13b3 base::internal::Invoker<>::Run()
+#8 0x5558c1b6cb31 _ZN12_GLOBAL__N_136ExecuteSessionCommandOnSessionThreadEPKcRKNSt4__Cr12basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEERKN4base17RepeatingCallbackIF6StatusP7SessionRKNSB_9DictValueEPNS2_10unique_ptrINSB_5ValueENS2_14default_deleteISK_EEEEEEEbbSI_13scoped_refptrINSB_22SingleThreadTaskRunnerEERKNSC_IFvRKSD_SN_SA_bEEE.c2d79fcaf9d3f4de329075124162d84e
+#9 0x5558c1b6d841 base::internal::Invoker<>::RunOnce()
+#10 0x5558c2070241 base::TaskAnnotator::RunTaskImpl()
+#11 0x5558c2073781 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWorkImpl()
+#12 0x5558c20731d8 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWork()
+#13 0x5558c2073c25 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWork()
+#14 0x5558c205c4db base::MessagePumpDefault::Run()
+#15 0x5558c2073ff9 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::Run()
+#16 0x5558c2045bf5 base::RunLoop::Run()
+#17 0x5558c2090858 base::Thread::Run()
+#18 0x5558c2090a7d base::Thread::ThreadMain()
+#19 0x5558c20a18ec _ZN4base12_GLOBAL__N_110ThreadFuncEPv.a67435033112019129ad5c28ddc47327
+#20 0x7fdde074cea3 start_thread
+
+⚠️ Error a las 2025-09-02 20:57:06: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(text(), 'ENTRADA')]"}
+  (Session info: chrome=138.0.7204.100); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x555fcc05e54e base::debug::StackTrace::StackTrace()
+#1 0x555fcbae6736 Status::Status()
+#2 0x555fcbb36246 FindElementCommon()
+#3 0x555fcbb365f1 FindElement()
+#4 0x555fcbb826e4 ExecuteFindElement()
+#5 0x555fcbb5d65d base::internal::Invoker<>::Run()
+#6 0x555fcbb80266 ExecuteWindowCommand()
+#7 0x555fcbb5d3b3 base::internal::Invoker<>::Run()
+#8 0x555fcbb28b31 _ZN12_GLOBAL__N_136ExecuteSessionCommandOnSessionThreadEPKcRKNSt4__Cr12basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEERKN4base17RepeatingCallbackIF6StatusP7SessionRKNSB_9DictValueEPNS2_10unique_ptrINSB_5ValueENS2_14default_deleteISK_EEEEEEEbbSI_13scoped_refptrINSB_22SingleThreadTaskRunnerEERKNSC_IFvRKSD_SN_SA_bEEE.c2d79fcaf9d3f4de329075124162d84e
+#9 0x555fcbb29841 base::internal::Invoker<>::RunOnce()
+#10 0x555fcc02c241 base::TaskAnnotator::RunTaskImpl()
+#11 0x555fcc02f781 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWorkImpl()
+#12 0x555fcc02f1d8 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWork()
+#13 0x555fcc02fc25 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWork()
+#14 0x555fcc0184db base::MessagePumpDefault::Run()
+#15 0x555fcc02fff9 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::Run()
+#16 0x555fcc001bf5 base::RunLoop::Run()
+#17 0x555fcc04c858 base::Thread::Run()
+#18 0x555fcc04ca7d base::Thread::ThreadMain()
+#19 0x555fcc05d8ec _ZN4base12_GLOBAL__N_110ThreadFuncEPv.a67435033112019129ad5c28ddc47327
+#20 0x7f5595e74ea3 start_thread
+
+⚠️ Error a las 2025-09-02 20:58:05: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(text(), 'ENTRADA')]"}
+  (Session info: chrome=138.0.7204.100); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x563eda22d54e base::debug::StackTrace::StackTrace()
+#1 0x563ed9cb5736 Status::Status()
+#2 0x563ed9d05246 FindElementCommon()
+#3 0x563ed9d055f1 FindElement()
+#4 0x563ed9d516e4 ExecuteFindElement()
+#5 0x563ed9d2c65d base::internal::Invoker<>::Run()
+#6 0x563ed9d4f266 ExecuteWindowCommand()
+#7 0x563ed9d2c3b3 base::internal::Invoker<>::Run()
+#8 0x563ed9cf7b31 _ZN12_GLOBAL__N_136ExecuteSessionCommandOnSessionThreadEPKcRKNSt4__Cr12basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEERKN4base17RepeatingCallbackIF6StatusP7SessionRKNSB_9DictValueEPNS2_10unique_ptrINSB_5ValueENS2_14default_deleteISK_EEEEEEEbbSI_13scoped_refptrINSB_22SingleThreadTaskRunnerEERKNSC_IFvRKSD_SN_SA_bEEE.c2d79fcaf9d3f4de329075124162d84e
+#9 0x563ed9cf8841 base::internal::Invoker<>::RunOnce()
+#10 0x563eda1fb241 base::TaskAnnotator::RunTaskImpl()
+#11 0x563eda1fe781 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWorkImpl()
+#12 0x563eda1fe1d8 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWork()
+#13 0x563eda1fec25 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWork()
+#14 0x563eda1e74db base::MessagePumpDefault::Run()
+#15 0x563eda1feff9 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::Run()
+#16 0x563eda1d0bf5 base::RunLoop::Run()
+#17 0x563eda21b858 base::Thread::Run()
+#18 0x563eda21ba7d base::Thread::ThreadMain()
+#19 0x563eda22c8ec _ZN4base12_GLOBAL__N_110ThreadFuncEPv.a67435033112019129ad5c28ddc47327
+#20 0x7f7a698b8ea3 start_thread
+
+⚠️ Error a las 2025-09-02 20:59:06: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(text(), 'ENTRADA')]"}
+  (Session info: chrome=138.0.7204.100); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x55572a49d54e base::debug::StackTrace::StackTrace()
+#1 0x555729f25736 Status::Status()
+#2 0x555729f75246 FindElementCommon()
+#3 0x555729f755f1 FindElement()
+#4 0x555729fc16e4 ExecuteFindElement()
+#5 0x555729f9c65d base::internal::Invoker<>::Run()
+#6 0x555729fbf266 ExecuteWindowCommand()
+#7 0x555729f9c3b3 base::internal::Invoker<>::Run()
+#8 0x555729f67b31 _ZN12_GLOBAL__N_136ExecuteSessionCommandOnSessionThreadEPKcRKNSt4__Cr12basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEERKN4base17RepeatingCallbackIF6StatusP7SessionRKNSB_9DictValueEPNS2_10unique_ptrINSB_5ValueENS2_14default_deleteISK_EEEEEEEbbSI_13scoped_refptrINSB_22SingleThreadTaskRunnerEERKNSC_IFvRKSD_SN_SA_bEEE.c2d79fcaf9d3f4de329075124162d84e
+#9 0x555729f68841 base::internal::Invoker<>::RunOnce()
+#10 0x55572a46b241 base::TaskAnnotator::RunTaskImpl()
+#11 0x55572a46e781 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWorkImpl()
+#12 0x55572a46e1d8 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWork()
+#13 0x55572a46ec25 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWork()
+#14 0x55572a4574db base::MessagePumpDefault::Run()
+#15 0x55572a46eff9 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::Run()
+#16 0x55572a440bf5 base::RunLoop::Run()
+#17 0x55572a48b858 base::Thread::Run()
+#18 0x55572a48ba7d base::Thread::ThreadMain()
+#19 0x55572a49c8ec _ZN4base12_GLOBAL__N_110ThreadFuncEPv.a67435033112019129ad5c28ddc47327
+#20 0x7f8019d3eea3 start_thread
+
+⚠️ Error a las 2025-09-02 21:00:12: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(text(), 'ENTRADA')]"}
+  (Session info: chrome=138.0.7204.100); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x56504e18354e base::debug::StackTrace::StackTrace()
+#1 0x56504dc0b736 Status::Status()
+#2 0x56504dc5b246 FindElementCommon()
+#3 0x56504dc5b5f1 FindElement()
+#4 0x56504dca76e4 ExecuteFindElement()
+#5 0x56504dc8265d base::internal::Invoker<>::Run()
+#6 0x56504dca5266 ExecuteWindowCommand()
+#7 0x56504dc823b3 base::internal::Invoker<>::Run()
+#8 0x56504dc4db31 _ZN12_GLOBAL__N_136ExecuteSessionCommandOnSessionThreadEPKcRKNSt4__Cr12basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEERKN4base17RepeatingCallbackIF6StatusP7SessionRKNSB_9DictValueEPNS2_10unique_ptrINSB_5ValueENS2_14default_deleteISK_EEEEEEEbbSI_13scoped_refptrINSB_22SingleThreadTaskRunnerEERKNSC_IFvRKSD_SN_SA_bEEE.c2d79fcaf9d3f4de329075124162d84e
+#9 0x56504dc4e841 base::internal::Invoker<>::RunOnce()
+#10 0x56504e151241 base::TaskAnnotator::RunTaskImpl()
+#11 0x56504e154781 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWorkImpl()
+#12 0x56504e1541d8 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWork()
+#13 0x56504e154c25 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWork()
+#14 0x56504e13d4db base::MessagePumpDefault::Run()
+#15 0x56504e154ff9 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::Run()
+#16 0x56504e126bf5 base::RunLoop::Run()
+#17 0x56504e171858 base::Thread::Run()
+#18 0x56504e171a7d base::Thread::ThreadMain()
+#19 0x56504e1828ec _ZN4base12_GLOBAL__N_110ThreadFuncEPv.a67435033112019129ad5c28ddc47327
+#20 0x7fca0453cea3 start_thread
+
+⚠️ Error a las 2025-09-02 21:01:06: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(text(), 'ENTRADA')]"}
+  (Session info: chrome=138.0.7204.100); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x556ef680654e base::debug::StackTrace::StackTrace()
+#1 0x556ef628e736 Status::Status()
+#2 0x556ef62de246 FindElementCommon()
+#3 0x556ef62de5f1 FindElement()
+#4 0x556ef632a6e4 ExecuteFindElement()
+#5 0x556ef630565d base::internal::Invoker<>::Run()
+#6 0x556ef6328266 ExecuteWindowCommand()
+#7 0x556ef63053b3 base::internal::Invoker<>::Run()
+#8 0x556ef62d0b31 _ZN12_GLOBAL__N_136ExecuteSessionCommandOnSessionThreadEPKcRKNSt4__Cr12basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEERKN4base17RepeatingCallbackIF6StatusP7SessionRKNSB_9DictValueEPNS2_10unique_ptrINSB_5ValueENS2_14default_deleteISK_EEEEEEEbbSI_13scoped_refptrINSB_22SingleThreadTaskRunnerEERKNSC_IFvRKSD_SN_SA_bEEE.c2d79fcaf9d3f4de329075124162d84e
+#9 0x556ef62d1841 base::internal::Invoker<>::RunOnce()
+#10 0x556ef67d4241 base::TaskAnnotator::RunTaskImpl()
+#11 0x556ef67d7781 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWorkImpl()
+#12 0x556ef67d71d8 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWork()
+#13 0x556ef67d7c25 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWork()
+#14 0x556ef67c04db base::MessagePumpDefault::Run()
+#15 0x556ef67d7ff9 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::Run()
+#16 0x556ef67a9bf5 base::RunLoop::Run()
+#17 0x556ef67f4858 base::Thread::Run()
+#18 0x556ef67f4a7d base::Thread::ThreadMain()
+#19 0x556ef68058ec _ZN4base12_GLOBAL__N_110ThreadFuncEPv.a67435033112019129ad5c28ddc47327
+#20 0x7f0d0a624ea3 start_thread
+
+⚠️ Error a las 2025-09-02 21:02:06: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(text(), 'ENTRADA')]"}
+  (Session info: chrome=138.0.7204.100); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x560880b9254e base::debug::StackTrace::StackTrace()
+#1 0x56088061a736 Status::Status()
+#2 0x56088066a246 FindElementCommon()
+#3 0x56088066a5f1 FindElement()
+#4 0x5608806b66e4 ExecuteFindElement()
+#5 0x56088069165d base::internal::Invoker<>::Run()
+#6 0x5608806b4266 ExecuteWindowCommand()
+#7 0x5608806913b3 base::internal::Invoker<>::Run()
+#8 0x56088065cb31 _ZN12_GLOBAL__N_136ExecuteSessionCommandOnSessionThreadEPKcRKNSt4__Cr12basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEERKN4base17RepeatingCallbackIF6StatusP7SessionRKNSB_9DictValueEPNS2_10unique_ptrINSB_5ValueENS2_14default_deleteISK_EEEEEEEbbSI_13scoped_refptrINSB_22SingleThreadTaskRunnerEERKNSC_IFvRKSD_SN_SA_bEEE.c2d79fcaf9d3f4de329075124162d84e
+#9 0x56088065d841 base::internal::Invoker<>::RunOnce()
+#10 0x560880b60241 base::TaskAnnotator::RunTaskImpl()
+#11 0x560880b63781 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWorkImpl()
+#12 0x560880b631d8 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWork()
+#13 0x560880b63c25 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWork()
+#14 0x560880b4c4db base::MessagePumpDefault::Run()
+#15 0x560880b63ff9 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::Run()
+#16 0x560880b35bf5 base::RunLoop::Run()
+#17 0x560880b80858 base::Thread::Run()
+#18 0x560880b80a7d base::Thread::ThreadMain()
+#19 0x560880b918ec _ZN4base12_GLOBAL__N_110ThreadFuncEPv.a67435033112019129ad5c28ddc47327
+#20 0x7f946dc52ea3 start_thread
+
+⚠️ Error a las 2025-09-02 21:03:06: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(text(), 'ENTRADA')]"}
+  (Session info: chrome=138.0.7204.100); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x556dce3cf54e base::debug::StackTrace::StackTrace()
+#1 0x556dcde57736 Status::Status()
+#2 0x556dcdea7246 FindElementCommon()
+#3 0x556dcdea75f1 FindElement()
+#4 0x556dcdef36e4 ExecuteFindElement()
+#5 0x556dcdece65d base::internal::Invoker<>::Run()
+#6 0x556dcdef1266 ExecuteWindowCommand()
+#7 0x556dcdece3b3 base::internal::Invoker<>::Run()
+#8 0x556dcde99b31 _ZN12_GLOBAL__N_136ExecuteSessionCommandOnSessionThreadEPKcRKNSt4__Cr12basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEERKN4base17RepeatingCallbackIF6StatusP7SessionRKNSB_9DictValueEPNS2_10unique_ptrINSB_5ValueENS2_14default_deleteISK_EEEEEEEbbSI_13scoped_refptrINSB_22SingleThreadTaskRunnerEERKNSC_IFvRKSD_SN_SA_bEEE.c2d79fcaf9d3f4de329075124162d84e
+#9 0x556dcde9a841 base::internal::Invoker<>::RunOnce()
+#10 0x556dce39d241 base::TaskAnnotator::RunTaskImpl()
+#11 0x556dce3a0781 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWorkImpl()
+#12 0x556dce3a01d8 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWork()
+#13 0x556dce3a0c25 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWork()
+#14 0x556dce3894db base::MessagePumpDefault::Run()
+#15 0x556dce3a0ff9 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::Run()
+#16 0x556dce372bf5 base::RunLoop::Run()
+#17 0x556dce3bd858 base::Thread::Run()
+#18 0x556dce3bda7d base::Thread::ThreadMain()
+#19 0x556dce3ce8ec _ZN4base12_GLOBAL__N_110ThreadFuncEPv.a67435033112019129ad5c28ddc47327
+#20 0x7ffaaee16ea3 start_thread
+
+⚠️ Error a las 2025-09-02 21:04:05: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(text(), 'ENTRADA')]"}
+  (Session info: chrome=138.0.7204.100); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x56331451454e base::debug::StackTrace::StackTrace()
+#1 0x563313f9c736 Status::Status()
+#2 0x563313fec246 FindElementCommon()
+#3 0x563313fec5f1 FindElement()
+#4 0x5633140386e4 ExecuteFindElement()
+#5 0x56331401365d base::internal::Invoker<>::Run()
+#6 0x563314036266 ExecuteWindowCommand()
+#7 0x5633140133b3 base::internal::Invoker<>::Run()
+#8 0x563313fdeb31 _ZN12_GLOBAL__N_136ExecuteSessionCommandOnSessionThreadEPKcRKNSt4__Cr12basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEERKN4base17RepeatingCallbackIF6StatusP7SessionRKNSB_9DictValueEPNS2_10unique_ptrINSB_5ValueENS2_14default_deleteISK_EEEEEEEbbSI_13scoped_refptrINSB_22SingleThreadTaskRunnerEERKNSC_IFvRKSD_SN_SA_bEEE.c2d79fcaf9d3f4de329075124162d84e
+#9 0x563313fdf841 base::internal::Invoker<>::RunOnce()
+#10 0x5633144e2241 base::TaskAnnotator::RunTaskImpl()
+#11 0x5633144e5781 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWorkImpl()
+#12 0x5633144e51d8 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWork()
+#13 0x5633144e5c25 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWork()
+#14 0x5633144ce4db base::MessagePumpDefault::Run()
+#15 0x5633144e5ff9 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::Run()
+#16 0x5633144b7bf5 base::RunLoop::Run()
+#17 0x563314502858 base::Thread::Run()
+#18 0x563314502a7d base::Thread::ThreadMain()
+#19 0x5633145138ec _ZN4base12_GLOBAL__N_110ThreadFuncEPv.a67435033112019129ad5c28ddc47327
+#20 0x7f4af4c9dea3 start_thread
+
+⚠️ Error a las 2025-09-02 21:05:08: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(text(), 'ENTRADA')]"}
+  (Session info: chrome=138.0.7204.100); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x5559e7f6c54e base::debug::StackTrace::StackTrace()
+#1 0x5559e79f4736 Status::Status()
+#2 0x5559e7a44246 FindElementCommon()
+#3 0x5559e7a445f1 FindElement()
+#4 0x5559e7a906e4 ExecuteFindElement()
+#5 0x5559e7a6b65d base::internal::Invoker<>::Run()
+#6 0x5559e7a8e266 ExecuteWindowCommand()
+#7 0x5559e7a6b3b3 base::internal::Invoker<>::Run()
+#8 0x5559e7a36b31 _ZN12_GLOBAL__N_136ExecuteSessionCommandOnSessionThreadEPKcRKNSt4__Cr12basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEERKN4base17RepeatingCallbackIF6StatusP7SessionRKNSB_9DictValueEPNS2_10unique_ptrINSB_5ValueENS2_14default_deleteISK_EEEEEEEbbSI_13scoped_refptrINSB_22SingleThreadTaskRunnerEERKNSC_IFvRKSD_SN_SA_bEEE.c2d79fcaf9d3f4de329075124162d84e
+#9 0x5559e7a37841 base::internal::Invoker<>::RunOnce()
+#10 0x5559e7f3a241 base::TaskAnnotator::RunTaskImpl()
+#11 0x5559e7f3d781 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWorkImpl()
+#12 0x5559e7f3d1d8 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWork()
+#13 0x5559e7f3dc25 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWork()
+#14 0x5559e7f264db base::MessagePumpDefault::Run()
+#15 0x5559e7f3dff9 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::Run()
+#16 0x5559e7f0fbf5 base::RunLoop::Run()
+#17 0x5559e7f5a858 base::Thread::Run()
+#18 0x5559e7f5aa7d base::Thread::ThreadMain()
+#19 0x5559e7f6b8ec _ZN4base12_GLOBAL__N_110ThreadFuncEPv.a67435033112019129ad5c28ddc47327
+#20 0x7f8e6642aea3 start_thread
+
+⚠️ Error al enviar código a las 2025-09-02 21:06:40: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@type='text']"}
+  (Session info: chrome=138.0.7204.100); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x55bde117954e base::debug::StackTrace::StackTrace()
+#1 0x55bde0c01736 Status::Status()
+#2 0x55bde0c51246 FindElementCommon()
+#3 0x55bde0c515f1 FindElement()
+#4 0x55bde0c9d6e4 ExecuteFindElement()
+#5 0x55bde0c7865d base::internal::Invoker<>::Run()
+#6 0x55bde0c9b266 ExecuteWindowCommand()
+#7 0x55bde0c783b3 base::internal::Invoker<>::Run()
+#8 0x55bde0c43b31 _ZN12_GLOBAL__N_136ExecuteSessionCommandOnSessionThreadEPKcRKNSt4__Cr12basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEERKN4base17RepeatingCallbackIF6StatusP7SessionRKNSB_9DictValueEPNS2_10unique_ptrINSB_5ValueENS2_14default_deleteISK_EEEEEEEbbSI_13scoped_refptrINSB_22SingleThreadTaskRunnerEERKNSC_IFvRKSD_SN_SA_bEEE.c2d79fcaf9d3f4de329075124162d84e
+#9 0x55bde0c44841 base::internal::Invoker<>::RunOnce()
+#10 0x55bde1147241 base::TaskAnnotator::RunTaskImpl()
+#11 0x55bde114a781 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWorkImpl()
+#12 0x55bde114a1d8 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWork()
+#13 0x55bde114ac25 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWork()
+#14 0x55bde11334db base::MessagePumpDefault::Run()
+#15 0x55bde114aff9 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::Run()
+#16 0x55bde111cbf5 base::RunLoop::Run()
+#17 0x55bde1167858 base::Thread::Run()
+#18 0x55bde1167a7d base::Thread::ThreadMain()
+#19 0x55bde11788ec _ZN4base12_GLOBAL__N_110ThreadFuncEPv.a67435033112019129ad5c28ddc47327
+#20 0x7fb1f3930ea3 start_thread
+
+✅ Entrada registrada correctamente a las 2025-09-02 21:07:06 CLT
+✅ Entrada registrada correctamente a las 2025-09-02 21:08:06 CLT
+⚠️ Error al ingresar código a las 2025-09-02 21:10:37: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='2']"}
+  (Session info: chrome=138.0.7204.100); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x55642621254e base::debug::StackTrace::StackTrace()
+#1 0x556425c9a736 Status::Status()
+#2 0x556425cea246 FindElementCommon()
+#3 0x556425cea5f1 FindElement()
+#4 0x556425d366e4 ExecuteFindElement()
+#5 0x556425d1165d base::internal::Invoker<>::Run()
+#6 0x556425d34266 ExecuteWindowCommand()
+#7 0x556425d113b3 base::internal::Invoker<>::Run()
+#8 0x556425cdcb31 _ZN12_GLOBAL__N_136ExecuteSessionCommandOnSessionThreadEPKcRKNSt4__Cr12basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEERKN4base17RepeatingCallbackIF6StatusP7SessionRKNSB_9DictValueEPNS2_10unique_ptrINSB_5ValueENS2_14default_deleteISK_EEEEEEEbbSI_13scoped_refptrINSB_22SingleThreadTaskRunnerEERKNSC_IFvRKSD_SN_SA_bEEE.c2d79fcaf9d3f4de329075124162d84e
+#9 0x556425cdd841 base::internal::Invoker<>::RunOnce()
+#10 0x5564261e0241 base::TaskAnnotator::RunTaskImpl()
+#11 0x5564261e3781 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWorkImpl()
+#12 0x5564261e31d8 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWork()
+#13 0x5564261e3c25 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWork()
+#14 0x5564261cc4db base::MessagePumpDefault::Run()
+#15 0x5564261e3ff9 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::Run()
+#16 0x5564261b5bf5 base::RunLoop::Run()
+#17 0x556426200858 base::Thread::Run()
+#18 0x556426200a7d base::Thread::ThreadMain()
+#19 0x5564262118ec _ZN4base12_GLOBAL__N_110ThreadFuncEPv.a67435033112019129ad5c28ddc47327
+#20 0x7f5671824ea3 start_thread
+
+✅ Entrada registrada correctamente a las 2025-09-02 21:11:06 CLT
+✅ Entrada registrada correctamente a las 2025-09-02 21:12:06 CLT
+✅ Entrada registrada correctamente a las 2025-09-02 21:13:06 CLT
+⚠️ Error al ingresar código a las 2025-09-02 21:13:41: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='2']"}
+  (Session info: chrome=138.0.7204.100); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x5589524e154e base::debug::StackTrace::StackTrace()
+#1 0x558951f69736 Status::Status()
+#2 0x558951fb9246 FindElementCommon()
+#3 0x558951fb95f1 FindElement()
+#4 0x5589520056e4 ExecuteFindElement()
+#5 0x558951fe065d base::internal::Invoker<>::Run()
+#6 0x558952003266 ExecuteWindowCommand()
+#7 0x558951fe03b3 base::internal::Invoker<>::Run()
+#8 0x558951fabb31 _ZN12_GLOBAL__N_136ExecuteSessionCommandOnSessionThreadEPKcRKNSt4__Cr12basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEERKN4base17RepeatingCallbackIF6StatusP7SessionRKNSB_9DictValueEPNS2_10unique_ptrINSB_5ValueENS2_14default_deleteISK_EEEEEEEbbSI_13scoped_refptrINSB_22SingleThreadTaskRunnerEERKNSC_IFvRKSD_SN_SA_bEEE.c2d79fcaf9d3f4de329075124162d84e
+#9 0x558951fac841 base::internal::Invoker<>::RunOnce()
+#10 0x5589524af241 base::TaskAnnotator::RunTaskImpl()
+#11 0x5589524b2781 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWorkImpl()
+#12 0x5589524b21d8 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWork()
+#13 0x5589524b2c25 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWork()
+#14 0x55895249b4db base::MessagePumpDefault::Run()
+#15 0x5589524b2ff9 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::Run()
+#16 0x558952484bf5 base::RunLoop::Run()
+#17 0x5589524cf858 base::Thread::Run()
+#18 0x5589524cfa7d base::Thread::ThreadMain()
+#19 0x5589524e08ec _ZN4base12_GLOBAL__N_110ThreadFuncEPv.a67435033112019129ad5c28ddc47327
+#20 0x7f0a3caa3ea3 start_thread
+
+⚠️ Error al ingresar código a las 2025-09-02 21:14:07: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='2']"}
+  (Session info: chrome=138.0.7204.100); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x55b17462f54e base::debug::StackTrace::StackTrace()
+#1 0x55b1740b7736 Status::Status()
+#2 0x55b174107246 FindElementCommon()
+#3 0x55b1741075f1 FindElement()
+#4 0x55b1741536e4 ExecuteFindElement()
+#5 0x55b17412e65d base::internal::Invoker<>::Run()
+#6 0x55b174151266 ExecuteWindowCommand()
+#7 0x55b17412e3b3 base::internal::Invoker<>::Run()
+#8 0x55b1740f9b31 _ZN12_GLOBAL__N_136ExecuteSessionCommandOnSessionThreadEPKcRKNSt4__Cr12basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEERKN4base17RepeatingCallbackIF6StatusP7SessionRKNSB_9DictValueEPNS2_10unique_ptrINSB_5ValueENS2_14default_deleteISK_EEEEEEEbbSI_13scoped_refptrINSB_22SingleThreadTaskRunnerEERKNSC_IFvRKSD_SN_SA_bEEE.c2d79fcaf9d3f4de329075124162d84e
+#9 0x55b1740fa841 base::internal::Invoker<>::RunOnce()
+#10 0x55b1745fd241 base::TaskAnnotator::RunTaskImpl()
+#11 0x55b174600781 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWorkImpl()
+#12 0x55b1746001d8 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWork()
+#13 0x55b174600c25 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWork()
+#14 0x55b1745e94db base::MessagePumpDefault::Run()
+#15 0x55b174600ff9 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::Run()
+#16 0x55b1745d2bf5 base::RunLoop::Run()
+#17 0x55b17461d858 base::Thread::Run()
+#18 0x55b17461da7d base::Thread::ThreadMain()
+#19 0x55b17462e8ec _ZN4base12_GLOBAL__N_110ThreadFuncEPv.a67435033112019129ad5c28ddc47327
+#20 0x7f125b180ea3 start_thread
+
+⚠️ Error al ingresar código a las 2025-09-02 21:15:09: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='2']"}
+  (Session info: chrome=138.0.7204.100); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x55d8f1a0454e base::debug::StackTrace::StackTrace()
+#1 0x55d8f148c736 Status::Status()
+#2 0x55d8f14dc246 FindElementCommon()
+#3 0x55d8f14dc5f1 FindElement()
+#4 0x55d8f15286e4 ExecuteFindElement()
+#5 0x55d8f150365d base::internal::Invoker<>::Run()
+#6 0x55d8f1526266 ExecuteWindowCommand()
+#7 0x55d8f15033b3 base::internal::Invoker<>::Run()
+#8 0x55d8f14ceb31 _ZN12_GLOBAL__N_136ExecuteSessionCommandOnSessionThreadEPKcRKNSt4__Cr12basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEERKN4base17RepeatingCallbackIF6StatusP7SessionRKNSB_9DictValueEPNS2_10unique_ptrINSB_5ValueENS2_14default_deleteISK_EEEEEEEbbSI_13scoped_refptrINSB_22SingleThreadTaskRunnerEERKNSC_IFvRKSD_SN_SA_bEEE.c2d79fcaf9d3f4de329075124162d84e
+#9 0x55d8f14cf841 base::internal::Invoker<>::RunOnce()
+#10 0x55d8f19d2241 base::TaskAnnotator::RunTaskImpl()
+#11 0x55d8f19d5781 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWorkImpl()
+#12 0x55d8f19d51d8 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWork()
+#13 0x55d8f19d5c25 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWork()
+#14 0x55d8f19be4db base::MessagePumpDefault::Run()
+#15 0x55d8f19d5ff9 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::Run()
+#16 0x55d8f19a7bf5 base::RunLoop::Run()
+#17 0x55d8f19f2858 base::Thread::Run()
+#18 0x55d8f19f2a7d base::Thread::ThreadMain()
+#19 0x55d8f1a038ec _ZN4base12_GLOBAL__N_110ThreadFuncEPv.a67435033112019129ad5c28ddc47327
+#20 0x7f9e313e1ea3 start_thread
+
+⚠️ Error al ingresar código a las 2025-09-02 21:16:07: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='2']"}
+  (Session info: chrome=138.0.7204.100); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x55ac2a04e54e base::debug::StackTrace::StackTrace()
+#1 0x55ac29ad6736 Status::Status()
+#2 0x55ac29b26246 FindElementCommon()
+#3 0x55ac29b265f1 FindElement()
+#4 0x55ac29b726e4 ExecuteFindElement()
+#5 0x55ac29b4d65d base::internal::Invoker<>::Run()
+#6 0x55ac29b70266 ExecuteWindowCommand()
+#7 0x55ac29b4d3b3 base::internal::Invoker<>::Run()
+#8 0x55ac29b18b31 _ZN12_GLOBAL__N_136ExecuteSessionCommandOnSessionThreadEPKcRKNSt4__Cr12basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEERKN4base17RepeatingCallbackIF6StatusP7SessionRKNSB_9DictValueEPNS2_10unique_ptrINSB_5ValueENS2_14default_deleteISK_EEEEEEEbbSI_13scoped_refptrINSB_22SingleThreadTaskRunnerEERKNSC_IFvRKSD_SN_SA_bEEE.c2d79fcaf9d3f4de329075124162d84e
+#9 0x55ac29b19841 base::internal::Invoker<>::RunOnce()
+#10 0x55ac2a01c241 base::TaskAnnotator::RunTaskImpl()
+#11 0x55ac2a01f781 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWorkImpl()
+#12 0x55ac2a01f1d8 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWork()
+#13 0x55ac2a01fc25 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWork()
+#14 0x55ac2a0084db base::MessagePumpDefault::Run()
+#15 0x55ac2a01fff9 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::Run()
+#16 0x55ac29ff1bf5 base::RunLoop::Run()
+#17 0x55ac2a03c858 base::Thread::Run()
+#18 0x55ac2a03ca7d base::Thread::ThreadMain()
+#19 0x55ac2a04d8ec _ZN4base12_GLOBAL__N_110ThreadFuncEPv.a67435033112019129ad5c28ddc47327
+#20 0x7f97e0090ea3 start_thread
+
+⚠️ Error al ingresar código a las 2025-09-02 21:17:07: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='2']"}
+  (Session info: chrome=138.0.7204.100); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x5654892d154e base::debug::StackTrace::StackTrace()
+#1 0x565488d59736 Status::Status()
+#2 0x565488da9246 FindElementCommon()
+#3 0x565488da95f1 FindElement()
+#4 0x565488df56e4 ExecuteFindElement()
+#5 0x565488dd065d base::internal::Invoker<>::Run()
+#6 0x565488df3266 ExecuteWindowCommand()
+#7 0x565488dd03b3 base::internal::Invoker<>::Run()
+#8 0x565488d9bb31 _ZN12_GLOBAL__N_136ExecuteSessionCommandOnSessionThreadEPKcRKNSt4__Cr12basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEERKN4base17RepeatingCallbackIF6StatusP7SessionRKNSB_9DictValueEPNS2_10unique_ptrINSB_5ValueENS2_14default_deleteISK_EEEEEEEbbSI_13scoped_refptrINSB_22SingleThreadTaskRunnerEERKNSC_IFvRKSD_SN_SA_bEEE.c2d79fcaf9d3f4de329075124162d84e
+#9 0x565488d9c841 base::internal::Invoker<>::RunOnce()
+#10 0x56548929f241 base::TaskAnnotator::RunTaskImpl()
+#11 0x5654892a2781 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWorkImpl()
+#12 0x5654892a21d8 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWork()
+#13 0x5654892a2c25 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::DoWork()
+#14 0x56548928b4db base::MessagePumpDefault::Run()
+#15 0x5654892a2ff9 base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl::Run()
+#16 0x565489274bf5 base::RunLoop::Run()
+#17 0x5654892bf858 base::Thread::Run()
+#18 0x5654892bfa7d base::Thread::ThreadMain()
+#19 0x5654892d08ec _ZN4base12_GLOBAL__N_110ThreadFuncEPv.a67435033112019129ad5c28ddc47327
+#20 0x7f114e8a3ea3 start_thread
+
+⚠️ Error al ingresar código a las 2025-09-02 21:18:05: No se pudo escribir en el campo #rut. ¿Es editable?
+⚠️ Error al ingresar código a las 2025-09-02 21:18:11: No se pudo escribir en el campo #rut. ¿Es editable?
+⚠️ Error al ingresar código a las 2025-09-02 21:18:55: No se pudo escribir en el campo #rut. ¿Es editable?
+⚠️ Error al ingresar código a las 2025-09-02 21:19:06: No se pudo escribir en el campo #rut. ¿Es editable?
+⚠️ Error al ingresar código a las 2025-09-02 21:20:08: No se pudo escribir en el campo #rut. ¿Es editable?
+✅ RUT tecleado y enviado a las 2025-09-02 21:20:38 CLT
+✅ RUT tecleado y enviado a las 2025-09-02 21:21:06 CLT
+✅ RUT tecleado y enviado a las 2025-09-02 21:21:36 CLT
+✅ RUT tecleado y enviado a las 2025-09-02 21:22:50 CLT
+✅ RUT tecleado y enviado a las 2025-09-02 21:23:51 CLT
+✅ RUT tecleado y enviado a las 2025-09-02 21:23:56 CLT
+✅ RUT tecleado y enviado a las 2025-09-02 21:24:19 CLT
+⚠️ Error al simular RUT a las 2025-09-02 21:31:52: name 'By' is not defined
+✅ RUT simulado y enviado a las 2025-09-02 21:33:06 CLT
+✅ RUT enviado correctamente a las 2025-09-02 21:36:38 CLT
+✅ Entrada registrada correctamente a las 2025-09-02 21:46:47 CLT
+✅ Entrada registrada correctamente a las 2025-09-02 21:46:54 CLT
+✅ Entrada registrada correctamente a las 2025-09-02 21:47:01 CLT
+✅ Entrada registrada correctamente a las 2025-09-02 21:47:07 CLT
+✅ Entrada registrada correctamente a las 2025-09-02 21:47:14 CLT
+✅ Entrada registrada correctamente a las 2025-09-02 21:50:05 CLT
+✅ Salida registrada correctamente a las 2025-09-02 21:50:21 CLT
+✅ Salida registrada correctamente a las 2025-09-02 21:51:08 CLT
+✅ Entrada registrada correctamente a las 2025-09-02 21:52:15 CLT
+✅ Entrada registrada correctamente a las 2025-09-02 21:53:47 CLT
+✅ Salida registrada correctamente a las 2025-09-02 21:54:02 CLT
+✅ Entrada registrada correctamente a las 2025-09-02 21:54:32 CLT
+✅ Salida registrada correctamente a las 2025-09-02 22:01:09 CLT
+✅ Entrada registrada correctamente a las 2025-09-02 22:09:14 CLT
+✅ Entrada registrada correctamente a las 2025-09-02 22:09:21 CLT
+✅ Salida registrada correctamente a las 2025-09-02 22:11:00 CLT
+✅ Entrada registrada correctamente a las 2025-09-03 13:07:08 CLT
+✅ Entrada registrada correctamente a las 2025-09-03 17:21:02 CLT
+✅ Entrada registrada correctamente a las 2025-09-03 17:21:45 CLT
+✅ Salida registrada correctamente a las 2025-09-03 22:07:18 CLT
+✅ Salida registrada correctamente a las 2025-09-03 22:11:13 CLT
+✅ Salida registrada correctamente a las 2025-09-03 22:11:20 CLT
