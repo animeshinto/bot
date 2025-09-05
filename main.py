@@ -1,8 +1,6 @@
 from flask import Flask, Response
 from datetime import datetime
-import time
-import undetected_chromedriver as uc
-from selenium.webdriver.common.by import By
+import requests
 
 app = Flask(__name__)
 LOG_PATH = "registro.log"
@@ -12,36 +10,16 @@ def guardar_log(mensaje):
         f.write(f"[{datetime.now()}] {mensaje}\n")
 
 def registrar_rut_virtual(url, tipo):
-    options = uc.ChromeOptions()
-    options.add_argument("--headless")
-    options.add_argument("--no-sandbox")
-    options.add_argument("--disable-dev-shm-usage")
-    options.add_argument("--disable-gpu")
-    options.add_argument("--window-size=1920,1080")
-
-    driver = uc.Chrome(options=options)
     try:
-        driver.get(url)
-        time.sleep(3)
-
-        for digito in "265237371":
-            selector = f"//li[@class='digits']//strong[text()='{digito}']"
-            boton = driver.find_element(By.XPATH, selector)
-            boton.click()
-            time.sleep(0.2)
-
-        enviar_btn = driver.find_element(By.XPATH, "//li[contains(@class, 'pad-action')]//sup[text()='Enviar']")
-        enviar_btn.click()
-
-        mensaje = f"✅ {tipo} registrada correctamente"
-        guardar_log(mensaje)
-        return mensaje
+        response = requests.get(url, timeout=10)
+        if response.status_code == 200:
+            mensaje = f"✅ {tipo} registrada correctamente"
+        else:
+            mensaje = f"⚠️ Error HTTP {response.status_code} al registrar {tipo}"
     except Exception as e:
-        mensaje = f"⚠️ Error al registrar {tipo}: {e}"
-        guardar_log(mensaje)
-        return mensaje
-    finally:
-        driver.quit()
+        mensaje = f"❌ Error al registrar {tipo}: {e}"
+    guardar_log(mensaje)
+    return mensaje
 
 @app.route("/entrada")
 def entrada():
@@ -58,7 +36,7 @@ def salida():
 @app.route("/")
 def home():
     return """
-    <h2>🧠 Bot operativo</h2>
+    <h2>🧠 Bot operativo sin navegador</h2>
     <ul>
         <li><a href='/entrada'>Registrar entrada</a></li>
         <li><a href='/salida'>Registrar salida</a></li>
@@ -68,7 +46,7 @@ def home():
 @app.route("/debug")
 def debug():
     try:
-        import undetected_chromedriver
-        return "✅ undetected-chromedriver está instalado y el bot está activo"
+        response = requests.get("https://app.ctrlit.cl", timeout=5)
+        return f"✅ Sitio accesible: {response.status_code}"
     except Exception as e:
-        return f"❌ Error: {str(e)}"
+        return f"❌ Error al acceder al sitio: {str(e)}"
