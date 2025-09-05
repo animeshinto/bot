@@ -1,7 +1,7 @@
 FROM ubuntu:22.04
 ENV DEBIAN_FRONTEND=noninteractive
 
-# Instala dependencias essenciais y Python
+# Instala dependencias del sistema y Python
 RUN apt-get update && apt-get install -y \
     wget unzip curl gnupg ca-certificates python3 python3-pip \
     fonts-liberation libnss3 libxss1 libappindicator3-1 libasound2 \
@@ -15,7 +15,7 @@ RUN wget -q -O /tmp/chrome.deb https://dl.google.com/linux/direct/google-chrome-
     apt-get update && apt-get install -y /tmp/chrome.deb && \
     rm /tmp/chrome.deb && rm -rf /var/lib/apt/lists/*
 
-# Descarga el ChromeDriver compatible con la versión instalada
+# Descarga el ChromeDriver correspondiente
 RUN CHROME_VER=$(google-chrome-stable --version | awk '{print $3}' | cut -d '.' -f 1) && \
     DRIVER_URL=$(curl -sSL "https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions-with-downloads.json" | \
     python3 -c "import sys, json; print(json.load(sys.stdin)['channels']['Stable']['downloads']['chromedriver'][0]['url'])") && \
@@ -25,10 +25,11 @@ RUN CHROME_VER=$(google-chrome-stable --version | awk '{print $3}' | cut -d '.' 
 
 WORKDIR /app
 
-# Copia e instala dependencias Python
+# Instala dependencias de Python
 COPY requirements.txt .
 RUN pip3 install --no-cache-dir -r requirements.txt
 
+# Copia el resto del código
 COPY . .
 
 EXPOSE 10000
