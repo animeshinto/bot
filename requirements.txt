@@ -1,3 +1,4 @@
 Flask
 gunicorn
 undetected-chromedriver
+selenium
