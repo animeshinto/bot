@@ -20,9 +20,11 @@ def registrar_rut_virtual(url, tipo):
     options.add_argument("--disable-gpu")
     options.add_argument("--window-size=1920,1080")
 
+    # Si usas Chromium instalado en una ruta específica, déjalo, sino comenta esta línea
     options.binary_location = "/usr/bin/chromium"
 
-    driver = uc.Chrome(options=options)  # ← ARREGLADO: se quitó browser_executable_path
+    # Se eliminó el argumento executable_path porque la librería lo maneja internamente
+    driver = uc.Chrome(options=options)
     try:
         driver.get(url)
         time.sleep(3)
@@ -71,4 +73,3 @@ def home():
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))
     app.run(host="0.0.0.0", port=port)
-
