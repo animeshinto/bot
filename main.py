@@ -22,7 +22,7 @@ def registrar_rut_virtual(url, tipo):
 
     options.binary_location = "/usr/bin/chromium"
 
-    driver = uc.Chrome(options=options, browser_executable_path="/usr/bin/chromium")
+    driver = uc.Chrome(options=options)  # ← ARREGLADO: se quitó browser_executable_path
     try:
         driver.get(url)
         time.sleep(3)
@@ -71,3 +71,4 @@ def home():
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))
     app.run(host="0.0.0.0", port=port)
+
