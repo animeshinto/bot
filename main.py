@@ -1,47 +1,44 @@
 from flask import Flask, Response
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.by import By
 from datetime import datetime
 import time
-import undetected_chromedriver as uc
-from selenium.webdriver.common.by import By
 import os
 
 app = Flask(__name__)
 LOG_PATH = "registro.log"
 
 def guardar_log(mensaje):
-    with open(LOG_PATH, "a", encoding="utf-8") as f:
-        f.write(f"[{datetime.now()}] {mensaje}\n")
+    with open(LOG_PATH, "a") as f:
+        f.write(mensaje + "\n")
 
 def registrar_rut_virtual(url, tipo):
-    options = uc.ChromeOptions()
-    options.add_argument("--headless")
+    options = Options()
+    options.add_argument("--headless=new")
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
     options.add_argument("--disable-gpu")
     options.add_argument("--window-size=1920,1080")
 
-    # Si Render usa Chromium, esta línea es útil, si no, coméntala:
-    # options.binary_location = "/usr/bin/chromium"
+    driver = webdriver.Chrome(options=options)  # Selenium Manager hará el resto
 
-    driver = uc.Chrome(options=options)  # YA NO se usa executable_path ni browser_executable_path
     try:
         driver.get(url)
         time.sleep(3)
-
         for digito in "265237371":
-            selector = f"//li[@class='digits']//strong[text()='{digito}']"
-            boton = driver.find_element(By.XPATH, selector)
+            boton = driver.find_element(By.XPATH, f"//li[@class='digits']//strong[text()='{digito}']")
             boton.click()
             time.sleep(0.2)
-
-        enviar_btn = driver.find_element(By.XPATH, "//li[contains(@class, 'pad-action')]//sup[text()='Enviar']")
+        enviar_btn = driver.find_element(By.XPATH, "//li[contains(@class,'pad-action')]//sup[text()='Enviar']")
         enviar_btn.click()
-
-        mensaje = f"✅ {tipo} registrada correctamente"
+        hora = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        mensaje = f"✅ {tipo} registrada correctamente a las {hora} CLT"
         guardar_log(mensaje)
         return mensaje
     except Exception as e:
-        mensaje = f"⚠️ Error al registrar {tipo}: {e}"
+        hora = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        mensaje = f"⚠️ Error al registrar {tipo} a las {hora}: {e}"
         guardar_log(mensaje)
         return mensaje
     finally:
@@ -49,26 +46,15 @@ def registrar_rut_virtual(url, tipo):
 
 @app.route("/entrada")
 def entrada():
-    url = "https://app.ctrlit.cl/ctrl/dial/guardarweb/nPeJwhLxFW?i=1"
-    mensaje = registrar_rut_virtual(url, "Entrada")
-    return Response(f"<h1>{mensaje}</h1>", mimetype="text/html")
+    return Response(f"<h1>{registrar_rut_virtual('https://app.ctrlit.cl/ctrl/dial/guardarweb/nPeJwhLxFW?i=1','Entrada')}</h1>", mimetype="text/html")
 
 @app.route("/salida")
 def salida():
-    url = "https://app.ctrlit.cl/ctrl/dial/guardarweb/nPeJwhLxFW?i=0"
-    mensaje = registrar_rut_virtual(url, "Salida")
-    return Response(f"<h1>{mensaje}</h1>", mimetype="text/html")
+    return Response(f"<h1>{registrar_rut_virtual('https://app.ctrlit.cl/ctrl/dial/guardarweb/nPeJwhLxFW?i=0','Salida')}</h1>", mimetype="text/html")
 
 @app.route("/")
 def home():
-    return """
-    <h2>🧠 Bot operativo</h2>
-    <ul>
-        <li><a href='/entrada'>Registrar entrada</a></li>
-        <li><a href='/salida'>Registrar salida</a></li>
-    </ul>
-    """
+    return "<h2> Bot operativo</h2><ul><li><a href='/entrada'>Registrar entrada</a></li><li><a href='/salida'>Registrar salida</a></li></ul>"
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 10000))
-    app.run(host="0.0.0.0", port=port)
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 10000)))
