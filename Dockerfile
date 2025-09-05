@@ -1,49 +1,5 @@
-FROM python:3.13-slim
-
-# Instalar dependencias del sistema necesarias para Chrome y Selenium
 RUN apt-get update && apt-get install -y \
-    wget \
-    gnupg2 \
-    python3-distutils \
-    unzip \
-    curl \
-    fonts-liberation \
-    libnss3 \
-    libxss1 \
-    libappindicator3-1 \
-    libasound2 \
-    xdg-utils \
-    libx11-xcb1 \
-    libxcomposite1 \
-    libxcursor1 \
-    libxdamage1 \
-    libxi6 \
-    libxtst6 \
-    libxrandr2 \
-    libatk1.0-0 \
-    libatk-bridge2.0-0 \
-    libgbm1 \
-    libgtk-3-0 \
-    --no-install-recommends && \
-    rm -rf /var/lib/apt/lists/*
-
-# Instalar Google Chrome estable
-RUN wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add - && \
-    echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list && \
-    apt-get update && apt-get install -y google-chrome-stable && \
-    rm -rf /var/lib/apt/lists/*
-
-# Crear directorio de trabajo
-WORKDIR /app
-
-# Copiar archivos del proyecto
-COPY . .
-
-# Instalar dependencias python
-RUN pip install --no-cache-dir -r requirements.txt
-
-# Exponer puerto usado por la app
-EXPOSE 10000
-
-# Comando para correr la app con gunicorn
-CMD ["gunicorn", "main:app", "--bind", "0.0.0.0:10000"]
+    paquete1 \
+    paquete2 \
+    ...
+    && rm -rf /var/lib/apt/lists/*
