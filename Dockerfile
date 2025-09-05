@@ -15,13 +15,17 @@ RUN wget -q -O /tmp/chrome.deb https://dl.google.com/linux/direct/google-chrome-
     apt-get update && apt-get install -y /tmp/chrome.deb && \
     rm /tmp/chrome.deb && rm -rf /var/lib/apt/lists/*
 
-# Descarga el ChromeDriver correspondiente
-RUN CHROME_VER=$(google-chrome-stable --version | awk '{print $3}' | cut -d '.' -f 1) && \
+# Descarga la última versión compatible de ChromeDriver para la versión instalada de Chrome
+RUN CHROME_VERSION=$(google-chrome-stable --version | awk '{print $3}' | cut -d '.' -f 1) && \
+    echo "Chrome version major: $CHROME_VERSION" && \
     DRIVER_URL=$(curl -sSL "https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions-with-downloads.json" | \
-    python3 -c "import sys, json; print(json.load(sys.stdin)['channels']['Stable']['downloads']['chromedriver'][0]['url'])") && \
+        python3 -c "import sys,json; data=json.load(sys.stdin); print([d['url'] for d in data['channels']['Stable']['downloads']['chromedriver'] if str($CHROME_VERSION) in d['url']][0])") && \
+    echo "Downloading chromedriver from: $DRIVER_URL" && \
     wget -q -O /tmp/chromedriver.zip "$DRIVER_URL" && \
-    unzip /tmp/chromedriver.zip -d /usr/local/bin && chmod +x /usr/local/bin/chromedriver && \
+    unzip /tmp/chromedriver.zip -d /usr/local/bin && \
+    chmod +x /usr/local/bin/chromedriver && \
     rm /tmp/chromedriver.zip
+
 
 WORKDIR /app
 
