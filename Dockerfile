@@ -25,6 +25,7 @@ RUN apt-get clean && apt-get update && apt-get install -y \
     libatk-bridge2.0-0 || true \
     libgbm1 \
     libgtk-3-0 \
+    chromium \
     --no-install-recommends && \
     rm -rf /var/lib/apt/lists/*
 
@@ -37,3 +38,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 CMD ["python", "main.py"]
+
