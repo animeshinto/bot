@@ -1,6 +1,15 @@
 FROM ubuntu:22.04
-
 ENV DEBIAN_FRONTEND=noninteractive
+
+RUN echo "nameserver 8.8.8.8" > /etc/resolv.conf && \
+    apt-get clean && apt-get update && apt-get install -y \
+      wget unzip curl gnupg ca-certificates python3 python3-pip \
+      fonts-liberation libnss3 libxss1 libappindicator3-1 libasound2 \
+      xdg-utils libgtk-3-0 && \
+    rm -rf /var/lib/apt/lists/*
+
+# ... resto del Dockerfile ...
+
 
 # Instala dependencias útiles y herramientas comunes
 RUN apt-get update && apt-get install -y \
