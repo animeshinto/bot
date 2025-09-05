@@ -3,6 +3,7 @@ from datetime import datetime
 import time
 import undetected_chromedriver as uc
 from selenium.webdriver.common.by import By
+import os
 
 app = Flask(__name__)
 LOG_PATH = "registro.log"
@@ -65,17 +66,6 @@ def home():
     </ul>
     """
 
-@app.route("/debug")
-def debug():
-    try:
-        driver = uc.Chrome()
-        driver.get("https://app.ctrlit.cl")
-        driver.quit()
-        return "✅ Navegador funcional en Render"
-    except Exception as e:
-        return f"❌ Error en navegador: {str(e)}"
-
 if __name__ == "__main__":
-    import os
     port = int(os.environ.get("PORT", 10000))
     app.run(host="0.0.0.0", port=port)
