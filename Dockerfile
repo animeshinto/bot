@@ -1,41 +1,31 @@
 FROM python:3.11-slim
 
+# Evita prompts interactivos en apt (aunque no usarás apt en Render)
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN apt-get clean && apt-get update && apt-get install -y \
-    wget \
-    gnupg2 \
-    python3-distutils \
-    unzip \
+# Instala Chromium y dependencias
+RUN apt-get update && apt-get install -y \
+    chromium \
+    chromium-driver \
     curl \
+    unzip \
     fonts-liberation \
     libnss3 \
     libxss1 \
-    libappindicator3-1 \
-    libasound2 \
-    xdg-utils \
-    libx11-xcb1 \
-    libxcomposite1 \
-    libxcursor1 \
-    libxdamage1 \
-    libxi6 \
-    libxtst6 \
-    libxrandr2 \
-    libatk1.0-0 \
-    libatk-bridge2.0-0 || true \
-    libgbm1 \
-    libgtk-3-0 \
-    chromium \
     --no-install-recommends && \
-    rm -rf /var/lib/apt/lists/*
+    apt-get clean && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
 
+# Copia y instala dependencias Python
 COPY requirements.txt .
-
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Copia el resto del código
 COPY . .
 
-CMD ["python", "main.py"]
+# Expón el puerto que usará Flask (o UDP si corresponde)
+EXPOSE 10000
 
+# Ejecuta tu aplicación
+CMD ["python", "main.py"]
