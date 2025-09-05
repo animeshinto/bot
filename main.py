@@ -20,11 +20,10 @@ def registrar_rut_virtual(url, tipo):
     options.add_argument("--disable-gpu")
     options.add_argument("--window-size=1920,1080")
 
-    # Si usas Chromium instalado en una ruta específica, déjalo, sino comenta esta línea
-    options.binary_location = "/usr/bin/chromium"
+    # Si Render usa Chromium, esta línea es útil, si no, coméntala:
+    # options.binary_location = "/usr/bin/chromium"
 
-    # Se eliminó el argumento executable_path porque la librería lo maneja internamente
-    driver = uc.Chrome(options=options)
+    driver = uc.Chrome(options=options)  # YA NO se usa executable_path ni browser_executable_path
     try:
         driver.get(url)
         time.sleep(3)
