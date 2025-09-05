@@ -1,17 +1,3 @@
-from flask import Flask, Response
-from datetime import datetime
-import time
-import undetected_chromedriver as uc
-from selenium.webdriver.common.by import By
-import os
-
-app = Flask(__name__)
-LOG_PATH = "registro.log"
-
-def guardar_log(mensaje):
-    with open(LOG_PATH, "a", encoding="utf-8") as f:
-        f.write(f"[{datetime.now()}] {mensaje}\n")
-
 def registrar_rut_virtual(url, tipo):
     options = uc.ChromeOptions()
     options.add_argument("--headless")
@@ -19,6 +5,9 @@ def registrar_rut_virtual(url, tipo):
     options.add_argument("--disable-dev-shm-usage")
     options.add_argument("--disable-gpu")
     options.add_argument("--window-size=1920,1080")
+
+    # Indicar la ruta del binario de Chromium dentro del contenedor
+    options.binary_location = "/usr/bin/chromium"
 
     driver = uc.Chrome(options=options)
     try:
@@ -43,29 +32,3 @@ def registrar_rut_virtual(url, tipo):
         return mensaje
     finally:
         driver.quit()
-
-@app.route("/entrada")
-def entrada():
-    url = "https://app.ctrlit.cl/ctrl/dial/guardarweb/nPeJwhLxFW?i=1"
-    mensaje = registrar_rut_virtual(url, "Entrada")
-    return Response(f"<h1>{mensaje}</h1>", mimetype="text/html")
-
-@app.route("/salida")
-def salida():
-    url = "https://app.ctrlit.cl/ctrl/dial/guardarweb/nPeJwhLxFW?i=0"
-    mensaje = registrar_rut_virtual(url, "Salida")
-    return Response(f"<h1>{mensaje}</h1>", mimetype="text/html")
-
-@app.route("/")
-def home():
-    return """
-    <h2>🧠 Bot operativo</h2>
-    <ul>
-        <li><a href='/entrada'>Registrar entrada</a></li>
-        <li><a href='/salida'>Registrar salida</a></li>
-    </ul>
-    """
-
-if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 10000))
-    app.run(host="0.0.0.0", port=port)
