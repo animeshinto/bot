@@ -1,15 +1,39 @@
-# Usa una imagen oficial de Python como base
-FROM python:3.12-slim
+# Usamos una imagen oficial de Python slim
+FROM python:3.13-slim
 
-# Establece el directorio de trabajo dentro del contenedor
+# Instalar dependencias del sistema necesarias
+RUN apt-get update && apt-get install -y \
+    wget \
+    gnupg2 \
+    python3-distutils \
+    unzip \
+    curl \
+    fonts-liberation \
+    libnss3 \
+    libxss1 \
+    libappindicator3-1 \
+    libasound2 \
+    xdg-utils \
+    --no-install-recommends && \
+    rm -rf /var/lib/apt/lists/*
+
+# Instalar Google Chrome estable
+RUN wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add - && \
+    echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list && \
+    apt-get update && apt-get install -y google-chrome-stable && \
+    rm -rf /var/lib/apt/lists/*
+
+# Crear directorio de trabajo
 WORKDIR /app
 
-# Copia los archivos del proyecto
+# Copiar archivos del proyecto
 COPY . .
 
-# Instala dependencias desde requirements.txt
-RUN pip install --upgrade pip \
-    && pip install -r requirements.txt
+# Instalar dependencias python
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Define el comando que se ejecutará al iniciar el contenedor
-CMD ["python", "main.py"]
+# Exponer el puerto que usa la app
+EXPOSE 10000
+
+# Comando para correr la app con gunicorn
+CMD ["gunicorn", "main:app", "--bind", "0.0.0.0:10000"]
