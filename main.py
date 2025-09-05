@@ -6,10 +6,9 @@ def registrar_rut_virtual(url, tipo):
     options.add_argument("--disable-gpu")
     options.add_argument("--window-size=1920,1080")
 
-    # Indicar la ruta del binario de Chromium dentro del contenedor
     options.binary_location = "/usr/bin/chromium"
 
-    driver = uc.Chrome(options=options)
+    driver = uc.Chrome(options=options, browser_executable_path="/usr/bin/chromium")
     try:
         driver.get(url)
         time.sleep(3)
