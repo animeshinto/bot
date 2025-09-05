@@ -1,10 +1,10 @@
-# Usa una imagen base oficial de Python (puedes cambiar la versión si quieres)
+# Usa una imagen base oficial de Python
 FROM python:3.11-slim
 
-# Cambiar a bash como shell predeterminado para evitar problemas con comandos RUN
-SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+# Establecer el entorno como no interactivo
+ENV DEBIAN_FRONTEND=noninteractive
 
-# Actualizar repositorios e instalar dependencias necesarias para librerías, navegador, etc.
+# Actualizar repositorios e instalar dependencias necesarias
 RUN apt-get update && apt-get install -y \
     wget \
     gnupg2 \
