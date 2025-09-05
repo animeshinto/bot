@@ -1,4 +1,4 @@
-app = "nombre-de-tu-app"  # Puedes cambiarlo por el nombre real de tu app
+app = "bot-9nst6a"
 
 [build]
   dockerfile = "Dockerfile"
