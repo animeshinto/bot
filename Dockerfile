@@ -1,7 +1,6 @@
-# Usamos una imagen oficial de Python slim
 FROM python:3.13-slim
 
-# Instalar dependencias del sistema necesarias
+# Instalar dependencias del sistema necesarias para Chrome y Selenium
 RUN apt-get update && apt-get install -y \
     wget \
     gnupg2 \
@@ -14,6 +13,17 @@ RUN apt-get update && apt-get install -y \
     libappindicator3-1 \
     libasound2 \
     xdg-utils \
+    libx11-xcb1 \
+    libxcomposite1 \
+    libxcursor1 \
+    libxdamage1 \
+    libxi6 \
+    libxtst6 \
+    libxrandr2 \
+    libatk1.0-0 \
+    libatk-bridge2.0-0 \
+    libgbm1 \
+    libgtk-3-0 \
     --no-install-recommends && \
     rm -rf /var/lib/apt/lists/*
 
@@ -32,7 +42,7 @@ COPY . .
 # Instalar dependencias python
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Exponer el puerto que usa la app
+# Exponer puerto usado por la app
 EXPOSE 10000
 
 # Comando para correr la app con gunicorn
