@@ -1,10 +1,7 @@
-# Usa una imagen base oficial de Python
 FROM python:3.11-slim
 
-# Establecer el entorno como no interactivo
 ENV DEBIAN_FRONTEND=noninteractive
 
-# Actualizar repositorios y limpiar caché antes de instalar
 RUN apt-get clean && apt-get update && apt-get install -y \
     wget \
     gnupg2 \
@@ -31,17 +28,12 @@ RUN apt-get clean && apt-get update && apt-get install -y \
     --no-install-recommends && \
     rm -rf /var/lib/apt/lists/*
 
-# Crear y establecer directorio de trabajo dentro del contenedor
 WORKDIR /app
 
-# Copiar el archivo de requerimientos para instalar dependencias de Python
 COPY requirements.txt .
 
-# Instalar las dependencias de Python
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copiar todo el contenido del proyecto al contenedor
 COPY . .
 
-# Comando por defecto para ejecutar tu bot
-CMD ["python", "bot.py"]
+CMD ["python", "main.py"]
